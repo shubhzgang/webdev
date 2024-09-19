@@ -5,7 +5,54 @@
   <meta charset="UTF-8">
   <title>CSS Flag Project</title>
   <style>
+    /* red: #CE1126 */
+    /* blue: #002868 */
     /* Write your CSS Code here */
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .flag {
+      position: relative;
+      background-color: #CE1126;
+      height: 600px;
+      width: 900px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .flag > div {
+      background-color: #002868;
+      height: 50%;
+      position: absolute;
+      width: 100%;
+      top: 25%;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-size: 5em;
+    }
+
+    .flag > p {
+      color: white;
+    }
+
+    .flag > div > div {
+      background-color: white;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      position: absolute;
+      top: calc(50% - 100px);
+      left: calc(50% - 100px);
+    }
+
+    .flag > div > div > p {
+      text-align: center;
+    }
     
   </style>
 </head>
